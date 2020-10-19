@@ -136,14 +136,14 @@
 
         </form>
         <br>
-        <div class="card bg-light mb-3 hidden" id="cardId" style="margin: 0 auto;text-align:center">
+        <!-- <div class="card bg-light mb-3 hidden" id="cardId" style="margin: 0 auto;text-align:center">
             <p id="grade2" class="hidden"></p>
             <div style="margin: 0 auto;text-align:center;" class="hidden" id="btn">
 
                 <br>
                 <button id="tryagain" class="btn btn-primary" style="margin-bottom: 10px" onclick="retry()">Try Again</button>
             </div>
-        </div>
+        </div> -->
 
         <script>
             document.getElementById("form").onsubmit = function() {
@@ -175,44 +175,25 @@
                 console.log(result);
 
                 if (result < 6) {
-                    document.getElementById("grade2").innerHTML = 'You have less than 6 correct. Please try again';
-                    $('#btn').removeClass('hidden');
 
-                    $('#grade2').removeClass('hidden');
-                    $('#cardId').removeClass('hidden');
+
+                    alert("You have less than 6 correct. Please try again");
+                    $('input[name="q1"]').prop('checked', false);
+                    $('input[name="q2"]').prop('checked', false);
+                    $('input[name="q3"]').prop('checked', false);
+                    $('input[name="q4"]').prop('checked', false);
+                    $('input[name="q5"]').prop('checked', false);
+                    $('input[name="q6"]').prop('checked', false);
+                    $('input[name="q7"]').prop('checked', false);
+                    return false;
+
+
 
                 } else {
-                    document.getElementById("grade2").innerHTML = 'Good Score';
-
-                    $('#grade2').removeClass('hidden');
-                    $('#cardId').removeClass('hidden');
+                    window.location.href = 'https://www.google.com';
 
                 }
-                $('#form').hide();
-
-
-
                 return false;
-
-            }
-
-            function retry() {
-                $("#form").show();
-
-                $('#btn').addClass('hidden');
-
-                $('#grade2').addClass('hidden');
-                $('#cardId').addClass('hidden');
-
-                $('input[name="q1"]').prop('checked', false);
-                $('input[name="q2"]').prop('checked', false);
-                $('input[name="q3"]').prop('checked', false);
-                $('input[name="q4"]').prop('checked', false);
-                $('input[name="q5"]').prop('checked', false);
-                $('input[name="q6"]').prop('checked', false);
-                $('input[name="q7"]').prop('checked', false);
-                return false;
-
             }
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
