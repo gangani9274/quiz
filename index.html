@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        h2 {
+            margin: 15px;
+        }
+        
+        input {
+            margin: 15px;
+        }
+        
+        h2 {
+            font-size: 18px;
+        }
+        
+        div {
+            margin: 5px;
+        }
+        
+        .card-header {
+            margin-bottom: 5px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        p {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="text-center">
+            <h3>Quiz</h3>
+
+        </div>
+
+        <form id="form">
+            <div class="card">
+                <div class="card-header">
+                    1. <img class="img-fluid" src="https://i.ibb.co/HpFCZHq/q-1.png">
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="option1"><input type="radio" name="q1" value="1" id="option1" required/>2</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="option2"><input type="radio" name="q1" value="2" id="option2" required/>3</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="option3"><input type="radio" name="q1" value="3" id="option3" required/>4</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="option4"><input type="radio" name="q1" value="4" id="option4" required/>5</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="option5"><input type="radio" name="q1" value="5" id="option5" required/>6</label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    2. <img class="img-fluid" src="https://i.ibb.co/YPk2rQT/q-2.png">
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="2option1"><input type="radio" name="q2" value="1" id="2option1" required/>07</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="2option2"><input type="radio" name="q2" value="2" id="2option2" required/>17</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="2option3"><input type="radio" name="q2" value="3" id="2option3" required/>87</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="2option4"><input type="radio" name="q2" value="4" id="2option4" required/>89</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="2option5"><input type="radio" name="q2" value="5" id="2option5" required/>99</label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    3. The day after the day after tomorrow is four days before Tuesday. What day is today?
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="3option1"><input type="radio" name="q3" value="1" id="3option1" required/>Sunday</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="3option2"><input type="radio" name="q3" value="2" id="3option2" required/>Monday</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="3option3"><input type="radio" name="q3" value="3" id="3option3" required/>Tuesday</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="3option4"><input type="radio" name="q3" value="4" id="3option4" required/>Wednesday</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="3option5"><input type="radio" name="q3" value="4" id="3option5" required/>Friday</label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    4. <img class="img-fluid" src="https://i.ibb.co/4MhJYw8/q-4.png">
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="4option1"><input type="radio" name="q4" value="1" id="4option1" required/><img class="img-fluid" src="https://i.ibb.co/Z8J6fBP/q4-1.png"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="4option2"><input type="radio" name="q4" value="2" id="4option2" required/><img class="img-fluid" src="https://i.ibb.co/VV7L6pz/q4-2.png"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="4option3"><input type="radio" name="q4" value="3" id="4option3" required/><img class="img-fluid" src="https://i.ibb.co/NrhZW4Y/q4-3.png"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="4option4"><input type="radio" name="q4" value="4" id="4option4" required/><img class="img-fluid" src="https://i.ibb.co/xMtcks4/q4-4.png"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="4option5"><input type="radio" name="q4" value="5" id="4option5" required/><img class="img-fluid" src="https://i.ibb.co/bN9Ysh4/q4-5.png"></label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    5. Paul, 15 years old, is three times as old as his brother. How old will Paul be when he is twice as old as his brother?
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="5option1"><input type="radio" name="q5" value="1" id="5option1" required/>18</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="5option2"><input type="radio" name="q5" value="2" id="5option2" required/>20</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="5option3"><input type="radio" name="q5" value="3" id="5option3" required/>24</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="5option4"><input type="radio" name="q5" value="4" id="5option4" required/>26</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="5option5"><input type="radio" name="q5" value="5" id="5option5" required/>30</label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    6. Find the Top view.
+                    <img class="img-fluid" src="https://i.ibb.co/rKPswp2/q6.png">
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="6option1"><input type="radio" name="q6" value="1" id="6option1" required/><img class="img-fluid" src="https://i.ibb.co/jDRjVVL/o1PNG.jpg"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="6option2"><input type="radio" name="q6" value="2" id="6option2" required/><img class="img-fluid" src="https://i.ibb.co/qp1jKMM/o2PNG.jpg"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="6option3"><input type="radio" name="q6" value="3" id="6option3" required/><img class="img-fluid" src="https://i.ibb.co/3BvpFn0/o3PNG.jpg"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="6option4"><input type="radio" name="q6" value="4" id="6option4" required/><img class="img-fluid" src="https://i.ibb.co/bXwqKxJ/o4PNG.jpg"></label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="6option5"><input type="radio" name="q6" value="5" id="6option5" required/><img class="img-fluid" src="https://i.ibb.co/jMX05RW/o5PNG.jpg"></label>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    7. At the end of a meeting, 4 people shake hands with each other. How many handshakes will there be in total?
+                </div>
+                <div class="form-row">
+                    <label class="col-lg-2 col-sm-4 col-6" for="7option1"><input type="radio" name="q7" value="1" id="7option1" required/>12</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="7option2"><input type="radio" name="q7" value="2" id="7option2" required/>8</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="7option3"><input type="radio" name="q7" value="3" id="7option3" required/>4</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="7option4"><input type="radio" name="q7" value="4" id="7option4" required/>5</label>
+                    <label class="col-lg-2 col-sm-4 col-6" for="7option5"><input type="radio" name="q7" value="5" id="7option5" required/>6</label>
+                </div>
+            </div>
+
+            <div style="margin: 0 auto;text-align:center;">
+                <br>
+                <button id="submitbtn" class="btn btn-primary" type="submit">Submit</button>
+            </div>
+
+        </form>
+        <br>
+        <div class="card bg-light mb-3 hidden" id="cardId" style="margin: 0 auto;text-align:center">
+            <p id="grade2" class="hidden"></p>
+            <div style="margin: 0 auto;text-align:center;" class="hidden" id="btn">
+
+                <br>
+                <button id="tryagain" class="btn btn-primary" style="margin-bottom: 10px" onclick="retry()">Try Again</button>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("form").onsubmit = function() {
+                var ans = [2, 3, 3, 1, 2, 1, 5];
+                var qans = [];
+
+                var q1 = parseInt(document.querySelector('input[name = "q1"]:checked').value);
+                qans.push(q1);
+                var q2 = parseInt(document.querySelector('input[name = "q2"]:checked').value);
+                qans.push(q2);
+                var q3 = parseInt(document.querySelector('input[name = "q3"]:checked').value);
+                qans.push(q3);
+                var q4 = parseInt(document.querySelector('input[name = "q4"]:checked').value);
+                qans.push(q4);
+                var q5 = parseInt(document.querySelector('input[name = "q5"]:checked').value);
+                qans.push(q5);
+                var q6 = parseInt(document.querySelector('input[name = "q6"]:checked').value);
+                qans.push(q6);
+                var q7 = parseInt(document.querySelector('input[name = "q7"]:checked').value);
+                qans.push(q7);
+                var result = 0;
+
+
+                for (var i = 1; i < 8; i++) {
+                    if (qans[i] === ans[i]) {
+                        result = result + 1;
+                    }
+                }
+                console.log(result);
+
+                if (result < 6) {
+                    document.getElementById("grade2").innerHTML = 'You have less than 6 correct. Please try again';
+                    $('#btn').removeClass('hidden');
+
+                    $('#grade2').removeClass('hidden');
+                    $('#cardId').removeClass('hidden');
+
+                } else {
+                    document.getElementById("grade2").innerHTML = 'Good Score';
+
+                    $('#grade2').removeClass('hidden');
+                    $('#cardId').removeClass('hidden');
+
+                }
+                $('#form').hide();
+
+
+
+                return false;
+
+            }
+
+            function retry() {
+                $("#form").show();
+
+                $('#btn').addClass('hidden');
+
+                $('#grade2').addClass('hidden');
+                $('#cardId').addClass('hidden');
+
+                $('input[name="q1"]').prop('checked', false);
+                $('input[name="q2"]').prop('checked', false);
+                $('input[name="q3"]').prop('checked', false);
+                $('input[name="q4"]').prop('checked', false);
+                $('input[name="q5"]').prop('checked', false);
+                $('input[name="q6"]').prop('checked', false);
+                $('input[name="q7"]').prop('checked', false);
+                return false;
+
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
