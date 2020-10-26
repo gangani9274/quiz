@@ -37,8 +37,10 @@
 
 <body>
     <div id="main" class="container">
-        <div class="text-center">
-            <h3>Quiz</h3>
+        <div class="text-center" style="margin-bottom: 50px; margin-top: 50px;">
+            <h1 style="margin-bottom: 20px;">Hello, Mitzvah Madness participants!</h1>
+            <h6>We hope you enjoyed your snack.  To receive your next clue, answer all of the questions below and get at least six of them correct.  Your team can work together or try with as many phones as you'd like.  We believe in you!
+            </h6>
 
         </div>
 
@@ -177,7 +179,7 @@
                 if (result < 6) {
 
 
-                    alert("You have less than 6 correct. Please try again");
+                    alert("Sorry, you did not answer at least six questions correctly.  Try again!");
                     $('input[name="q1"]').prop('checked', false);
                     $('input[name="q2"]').prop('checked', false);
                     $('input[name="q3"]').prop('checked', false);
